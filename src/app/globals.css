@@ -106,3 +106,23 @@ body {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
   border-color: #0058bc;
 }
+
+.soft-shadow {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+}
+.timeline-line {
+  background: #e5e5e7;
+  width: 2px;
+}
+.tech-chip {
+  background-color: #f0f0f2;
+  color: #414755;
+}
+.experience-card {
+  border: 1px solid #e5e5e7;
+  transition: all 0.3s ease;
+}
+.experience-card:hover {
+  border-color: #0058bc;
+  box-shadow: 0px 10px 30px rgba(0, 88, 188, 0.05);
+}
