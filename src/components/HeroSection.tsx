@@ -37,13 +37,13 @@ export default function HeroSection() {
           <h2 className="text-2xl lg:text-3xl font-medium text-slate-700 mb-6">
             Software Engineer | React.js &amp; Spring Boot Developer
           </h2>
-          <p className="text-lg text-slate-500 max-w-lg leading-relaxed mb-10">
+          <p className="text-lg text-slate-500 max-w-120 leading-relaxed mb-10">
             Building scalable web applications with modern technologies. I
             specialize in crafting high-performance frontend experiences and
             robust backend architectures.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-[#005bc4] text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-2 hover:bg-blue-700 transition-all group">
+            <button className="bg-[#005bc4] text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-2 hover:bg-blue-700 transition-all group cursor-pointer">
               <span>View Projects</span>
               <svg
                 className="h-5 w-5 transform group-hover:translate-x-1 transition-transform"
@@ -54,13 +54,13 @@ export default function HeroSection() {
               >
                 <path
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 ></path>
               </svg>
             </button>
-            <button className="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-2 hover:bg-slate-50 transition-all">
+            <button className="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-2 hover:bg-slate-50 transition-all cursor-pointer">
               <svg
                 className="h-5 w-5"
                 fill="none"
@@ -70,16 +70,16 @@ export default function HeroSection() {
               >
                 <path
                   d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 ></path>
               </svg>
               <span>Download Resume</span>
             </button>
           </div>
           {/* <!-- Web Vitals Floating Card --> */}
-          <div className="mt-12 flex items-center space-x-4 bg-white p-4 rounded-2xl border border-slate-100 shadow-xl max-w-xs relative overflow-hidden">
+          {/* <div className="mt-12 flex items-center space-x-4 bg-white p-4 rounded-2xl border border-slate-100 shadow-xl max-w-xs relative overflow-hidden">
             <div className="bg-blue-50 p-3 rounded-lg text-blue-600">
               <svg
                 className="h-6 w-6"
@@ -90,9 +90,9 @@ export default function HeroSection() {
               >
                 <path
                   d="M13 10V3L4 14h7v7l9-11h-7z"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 ></path>
               </svg>
             </div>
@@ -102,7 +102,7 @@ export default function HeroSection() {
               </div>
               <div className="text-2xl font-bold text-slate-800">99% Score</div>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* <!-- Right Code Column --> */}
         <div className="relative" data-purpose="hero-code-visual">
@@ -176,9 +176,9 @@ export default function HeroSection() {
                 >
                   <path
                     d="M5 13l4 4L19 7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                   ></path>
                 </svg>
               </span>
