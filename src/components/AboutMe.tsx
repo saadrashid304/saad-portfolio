@@ -12,7 +12,7 @@ import ProfilePicture from "@/assets/Profile_Image.png";
 export default function AboutMe() {
   return (
     // <!-- About Me Section -->
-    <section className="max-w-7xl mx-auto px-6 md:px-12 py-xxl flex flex-col md:flex-row items-center gap-xl md:gap-xxl">
+    <section className="max-w-7xl mx-auto px-6 md:px-12 py-20 flex flex-col md:flex-row items-center gap-xl md:gap-xxl">
       {/* <!-- Left Side: Profile Image --> */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-start">
         <div className="relative group w-full">
