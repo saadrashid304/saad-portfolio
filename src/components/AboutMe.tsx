@@ -2,10 +2,10 @@ import Image from "next/image";
 import {
   MdOutlineLayers,
   MdOutlineApi,
-  MdOutlineSpeed,
-  MdOutlineArchitecture,
+  MdOutlinePsychology,
   MdOutlineDownload,
 } from "react-icons/md";
+import { FaCode } from "react-icons/fa6";
 
 import ProfilePicture from "@/assets/Profile_Image.png";
 
@@ -68,29 +68,49 @@ export default function AboutMe() {
         </div>
         {/* <!-- Highlights Grid --> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-md pt-md">
-          <div className="flex items-center gap-3 p-md bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
-            <MdOutlineLayers className="text-primary" size={25} />
-            <span className="font-h3 text-body-md text-on-surface">
-              Full-Stack Development
-            </span>
+          <div className="flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+            <MdOutlineLayers className="text-primary" size={35} />
+            <div className="flex flex-col gap-1">
+              <span className="font-h3 text-[14px] font-bold text-on-surface">
+                Full-Stack Development
+              </span>
+              <span className="font-h3 text-[12px] text-on-surface-variant">
+                Building end-to-end solutions from UI to Database.
+              </span>
+            </div>
           </div>
-          <div className="flex items-center gap-3 p-md bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
-            <MdOutlineApi className="text-primary" size={25} />
-            <span className="font-h3 text-body-md text-on-surface">
-              API Design &amp; Integration
-            </span>
+          <div className="flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+            <MdOutlineApi className="text-primary" size={38} />
+            <div className="flex flex-col gap-1">
+              <span className="font-h3 text-[14px] font-bold text-on-surface">
+                API Design & Security
+              </span>
+              <span className="font-h3 text-[12px] text-on-surface-variant">
+                Architecting clean, secure, and performant RESTful services.
+              </span>
+            </div>
           </div>
-          <div className="flex items-center gap-3 p-md bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
-            <MdOutlineSpeed className="text-primary" size={25} />
-            <span className="font-h3 text-body-md text-on-surface">
-              Performance Optimization
-            </span>
+          <div className="flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+            <FaCode className="text-primary" size={32} />
+            <div className="flex flex-col gap-1">
+              <span className="font-h3 text-[14px] font-bold text-on-surface">
+                Clean Code & Scalability
+              </span>
+              <span className="font-h3 text-[12px] text-on-surface-variant">
+                Writing maintainable code that grows with the product.
+              </span>
+            </div>
           </div>
-          <div className="flex items-center gap-3 p-md bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
-            <MdOutlineArchitecture className="text-primary" size={30} />
-            <span className="font-h3 text-body-md text-on-surface">
-              Scalable System Architecture
-            </span>
+          <div className="flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+            <MdOutlinePsychology className="text-primary" size={40} />
+            <div className="flex flex-col gap-1">
+              <span className="font-h3 text-[14px] font-bold text-on-surface">
+                Problem Solving
+              </span>
+              <span className="font-h3 text-[12px] text-on-surface-variant">
+                Turning complex challenges into elegant technical solutions.
+              </span>
+            </div>
           </div>
         </div>
         <div className="pt-lg">
