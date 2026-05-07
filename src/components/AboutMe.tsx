@@ -12,7 +12,10 @@ import ProfilePicture from "@/assets/Profile_Image.png";
 export default function AboutMe() {
   return (
     // <!-- About Me Section -->
-    <section className="max-w-7xl mx-auto px-6 md:px-12 py-20 flex flex-col md:flex-row items-center gap-xl md:gap-xxl">
+    <section
+      id="about"
+      className="max-w-7xl mx-auto px-6 md:px-12 py-12 lg:py-20 flex flex-col md:flex-row items-center gap-xl md:gap-xxl"
+    >
       {/* <!-- Left Side: Profile Image --> */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-start">
         <div className="relative group w-full">
@@ -114,10 +117,12 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="pt-lg">
-          <button className="bg-primary text-on-primary cursor-pointer px-8 py-4 rounded-lg font-bold text-label-sm uppercase tracking-widest flex items-center gap-2 hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/20">
-            <MdOutlineDownload size={25} />
-            Download Resume
-          </button>
+          <a href="/Saad-Rashid-CV.pdf" download="Saad-Rashid-CV.pdf">
+            <button className="bg-primary text-on-primary cursor-pointer px-8 py-4 rounded-lg font-bold text-label-sm uppercase tracking-widest flex items-center gap-2 hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/20">
+              <MdOutlineDownload size={25} />
+              Download Resume
+            </button>
+          </a>
         </div>
       </div>
     </section>

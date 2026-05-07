@@ -3,16 +3,22 @@ import {
   MdOutlineSecurity,
   MdOutlineAccountTree,
   MdOutlineNewspaper,
+  MdOutlineSchool,
+  MdOutlineCheckCircle,
+  MdOutlineLocationOn,
 } from "react-icons/md";
 
 export default function Education() {
   return (
-    <main className="pt-xxl pb-xxl">
+    <main
+      id="education"
+      className="max-w-7xl mx-auto px-6 md:px-12 py-10"
+    >
       {/* <!-- Hero/Header Section --> */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 mt-16 mb-xl">
+      <section className="mb-xl">
         <div className="flex flex-col gap-sm">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-primary-container animate-pulse"></div>
+            <span className="w-3 h-3 bg-primary rounded-full animate-pulse"></span>
             <span className="font-label-sm text-label-sm text-primary uppercase">
               Academic Journey
             </span>
@@ -27,48 +33,28 @@ export default function Education() {
         </div>
       </section>
       {/* <!-- Education Section --> */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12">
+      <section className="">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
           {/* <!-- Left: Visual/Status --> */}
           <div className="lg:col-span-4 flex flex-col gap-lg">
             <div className="bg-surface-container-lowest p-lg rounded-xl border border-[#E5E5E7] soft-shadow">
               <div className="flex items-center gap-md mb-md">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <span
-                    className="material-symbols-outlined text-primary"
-                    data-icon="school"
-                  >
-                    school
-                  </span>
+                  <MdOutlineSchool size={25} className="text-primary" />
                 </div>
                 <h3 className="font-h3 text-h3 text-slate-900">Credentials</h3>
               </div>
               <ul className="flex flex-col gap-sm">
                 <li className="flex items-center gap-2 text-sm text-secondary">
-                  <span
-                    className="material-symbols-outlined text-xs"
-                    data-icon="check_circle"
-                  >
-                    check_circle
-                  </span>
+                  <MdOutlineCheckCircle />
                   Verified Degree &amp; Transcripts
                 </li>
                 <li className="flex items-center gap-2 text-sm text-secondary">
-                  <span
-                    className="material-symbols-outlined text-xs"
-                    data-icon="check_circle"
-                  >
-                    check_circle
-                  </span>
+                  <MdOutlineCheckCircle />
                   Engineering Certification
                 </li>
                 <li className="flex items-center gap-2 text-sm text-secondary">
-                  <span
-                    className="material-symbols-outlined text-xs"
-                    data-icon="check_circle"
-                  >
-                    check_circle
-                  </span>
+                  <MdOutlineCheckCircle />
                   Mathematical Background
                 </li>
               </ul>
@@ -85,7 +71,7 @@ export default function Education() {
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent flex items-end p-md">
                 <span className="text-white font-label-sm text-xs">
-                  COMSATs Campus, Islamabad
+                  COMSATS Campus, Islamabad
                 </span>
               </div>
             </div>
@@ -104,20 +90,19 @@ export default function Education() {
                 <div className="bg-white p-lg rounded-xl border border-[#E5E5E7] soft-shadow group-hover:border-primary/40 transition-all duration-300">
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                     <h3 className="font-h3 text-h3 text-slate-900">
-                      {`Bachelor's in Software Engineering`}
+                      {`BS Software Engineering`}
                     </h3>
                     <span className="font-label-sm text-label-sm text-secondary bg-surface-container px-3 py-1 rounded-full mt-2 md:mt-0">
-                      2019 - 2023
+                      2018 - 2022
                     </span>
                   </div>
                   <div className="flex items-center gap-2 text-primary font-medium mb-4">
-                    <span
-                      className="material-symbols-outlined text-sm"
-                      data-icon="location_on"
-                    >
-                      location_on
-                    </span>
+                    <MdOutlineLocationOn />
                     <span>COMSATS University, Islamabad</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-secondary font-medium mb-4">
+                    <MdOutlineSchool />
+                    <span>HEC</span>
                   </div>
                   <p className="text-secondary font-body-md leading-relaxed">
                     Specialized in Software Architecture, Web Technologies, and
@@ -149,17 +134,16 @@ export default function Education() {
                       Intermediate (Pre-Engineering)
                     </h3>
                     <span className="font-label-sm text-label-sm text-secondary bg-surface-container px-3 py-1 rounded-full mt-2 md:mt-0">
-                      2017 - 2019
+                      2016 - 2018
                     </span>
                   </div>
+                  <div className="flex items-center gap-2 text-primary font-medium mb-4">
+                    <MdOutlineLocationOn />
+                    <span>Steps College, Rawalpindi</span>
+                  </div>
                   <div className="flex items-center gap-2 text-secondary font-medium mb-4">
-                    <span
-                      className="material-symbols-outlined text-sm"
-                      data-icon="school"
-                    >
-                      school
-                    </span>
-                    <span>FBISE</span>
+                    <MdOutlineSchool />
+                    <span>BISE Rawalpindi</span>
                   </div>
                   <p className="text-secondary font-body-md leading-relaxed">
                     Focused on Mathematics, Physics, and Chemistry. Developed
@@ -180,16 +164,15 @@ export default function Education() {
                       Matriculation
                     </h3>
                     <span className="font-label-sm text-label-sm text-secondary bg-surface-container px-3 py-1 rounded-full mt-2 md:mt-0">
-                      2015 - 2017
+                      2014 - 2016
                     </span>
                   </div>
+                  <div className="flex items-center gap-2 text-primary font-medium mb-4">
+                    <MdOutlineLocationOn />
+                    <span>Nur Khan Air Base, Rawalpindi</span>
+                  </div>
                   <div className="flex items-center gap-2 text-secondary font-medium mb-4">
-                    <span
-                      className="material-symbols-outlined text-sm"
-                      data-icon="book"
-                    >
-                      book
-                    </span>
+                    <MdOutlineSchool />
                     <span>FBISE</span>
                   </div>
                   <p className="text-secondary font-body-md leading-relaxed">

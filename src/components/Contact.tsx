@@ -1,8 +1,15 @@
 import Image from "next/image";
+import {
+  MdOutlineMailOutline,
+  MdOutlinePhone,
+  MdOutlineSchedule,
+  MdOutlineLock,
+} from "react-icons/md";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <main className="max-w-7xl mx-auto px-8 mt-xxl mb-xxl">
+    <main id="contact" className="max-w-7xl mx-auto px-6 md:px-12 py-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-xl">
         {/* <!-- Left Column: Information --> */}
         <div className="lg:col-span-5 flex flex-col gap-lg">
@@ -27,92 +34,76 @@ export default function Contact() {
             {/* <!-- Contact Item --> */}
             <div className="group flex items-center gap-md">
               <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-[#E5E5E7] text-primary group-hover:border-primary transition-colors">
-                <span className="material-symbols-outlined" data-icon="mail">
-                  mail
-                </span>
+                <MdOutlineMailOutline size={22} />
               </div>
               <div>
                 <p className="text-xs font-label-sm text-outline uppercase tracking-wider">
                   Email
                 </p>
                 <a
-                  className="font-body-md text-on-surface hover:text-primary transition-colors"
+                  className="font-body-md text-on-surface hover:text-primary transition-colors cursor-pointer"
                   href="mailto:hello@kineticlogic.io"
                 >
-                  hello@kineticlogic.io
+                  saadrashid304@gmail.com
                 </a>
               </div>
             </div>
             {/* <!-- Contact Item --> */}
             <div className="group flex items-center gap-md">
               <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-[#E5E5E7] text-primary group-hover:border-primary transition-colors">
-                <span className="material-symbols-outlined" data-icon="link">
-                  link
-                </span>
+                <MdOutlinePhone size={22} />
+              </div>
+              <div>
+                <p className="text-xs font-label-sm text-outline uppercase tracking-wider">
+                  Phone
+                </p>
+                <a
+                  className="font-body-md text-on-surface hover:text-primary transition-colors cursor-pointer"
+                  href="#"
+                >
+                  +92 313 5163383
+                </a>
+              </div>
+            </div>
+            {/* <!-- Contact Item --> */}
+            <div className="group flex items-center gap-md">
+              <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-[#E5E5E7] text-primary group-hover:border-primary transition-colors">
+                <FaLinkedin size={20} />
               </div>
               <div>
                 <p className="text-xs font-label-sm text-outline uppercase tracking-wider">
                   LinkedIn
                 </p>
                 <a
-                  className="font-body-md text-on-surface hover:text-primary transition-colors"
+                  className="font-body-md text-on-surface hover:text-primary transition-colors cursor-pointer"
                   href="#"
                 >
-                  linkedin.com/in/devportfolio
+                  https://www.linkedin.com/in/saadrashid304
                 </a>
               </div>
             </div>
             {/* <!-- Contact Item --> */}
             <div className="group flex items-center gap-md">
               <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-[#E5E5E7] text-primary group-hover:border-primary transition-colors">
-                <span className="material-symbols-outlined" data-icon="code">
-                  code
-                </span>
+                <FaGithub size={20} />
               </div>
               <div>
                 <p className="text-xs font-label-sm text-outline uppercase tracking-wider">
                   GitHub
                 </p>
                 <a
-                  className="font-body-md text-on-surface hover:text-primary transition-colors"
+                  className="font-body-md text-on-surface hover:text-primary transition-colors cursor-pointer"
                   href="#"
                 >
-                  github.com/kinetic-logic
-                </a>
-              </div>
-            </div>
-            {/* <!-- Contact Item --> */}
-            <div className="group flex items-center gap-md">
-              <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-[#E5E5E7] text-primary group-hover:border-primary transition-colors">
-                <span
-                  className="material-symbols-outlined"
-                  data-icon="shopping_bag"
-                >
-                  shopping_bag
-                </span>
-              </div>
-              <div>
-                <p className="text-xs font-label-sm text-outline uppercase tracking-wider">
-                  Fiverr
-                </p>
-                <a
-                  className="font-body-md text-on-surface hover:text-primary transition-colors"
-                  href="#"
-                >
-                  fiverr.com/dev_specialist
+                  https://github.com/saadrashid304
                 </a>
               </div>
             </div>
           </div>
           <div className="mt-lg">
             <div className="p-lg bg-surface-container-lowest border border-[#E5E5E7] rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.04)] overflow-hidden relative">
-              <div className="absolute top-0 right-0 p-4 opacity-10">
-                <span
-                  className="material-symbols-outlined text-6xl"
-                  data-icon="schedule"
-                >
-                  schedule
-                </span>
+              <div className="absolute top-2 right-0 p-4 opacity-10">
+                <MdOutlineSchedule className="text-6xl!" />
               </div>
               <p className="font-h3 text-h3 text-primary">24h</p>
               <p className="font-label-sm text-on-surface-variant">
@@ -195,13 +186,7 @@ export default function Contact() {
                   Send Message
                 </button>
                 <p className="text-center font-label-sm text-outline-variant flex items-center justify-center gap-xs">
-                  <span
-                    className="material-symbols-outlined text-sm"
-                    data-icon="lock"
-                    // style="font-size: 14px;"
-                  >
-                    lock
-                  </span>
+                  <MdOutlineLock />
                   Your information is secure and never shared.
                 </p>
               </div>

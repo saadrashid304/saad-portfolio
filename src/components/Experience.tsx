@@ -6,9 +6,18 @@ import {
 
 export default function Experience() {
   return (
-    <main className="pt-32 pb-xxl">
-      <div className="max-w-7xl mx-auto px-6">
+    <main
+      id="experience"
+      className="max-w-7xl mx-auto px-6 md:px-12 py-10"
+    >
+      <div className="w-full">
         {/* <!-- Section Header --> */}
+        <div className="flex items-center gap-sm mb-md">
+          <span className="w-3 h-3 bg-primary rounded-full animate-pulse"></span>
+          <span className="font-label-sm text-primary uppercase tracking-widest">
+            Professional Journey
+          </span>
+        </div>
         <div className="mb-xl text-center md:text-left">
           <h1 className="font-h1 text-h1 font-bold text-on-background mb-sm">
             Professional Experience
@@ -19,7 +28,7 @@ export default function Experience() {
           </p>
         </div>
         {/* <!-- Experience Timeline Container --> */}
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative">
           {/* <!-- Vertical Rail --> */}
           <div className="absolute left-2.75 md:left-4.75 top-4 bottom-4 timeline-line"></div>
           {/* <!-- Experience Entry 1 --> */}

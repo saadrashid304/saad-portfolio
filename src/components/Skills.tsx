@@ -19,9 +19,12 @@ import { FaAws, FaJenkins } from "react-icons/fa6";
 
 export default function Skills() {
   return (
-    <>
+    <main
+      id="skills"
+      className="max-w-7xl mx-auto px-6 md:px-12 py-10"
+    >
       {/* <!-- Hero Header for Tech Stack --> */}
-      <header className="max-w-7xl mx-auto px-6 md:px-12 pt-xxl pb-xl">
+      <header className="w-full">
         <div className="flex items-center gap-sm mb-md">
           <span className="w-3 h-3 bg-primary rounded-full animate-pulse"></span>
           <span className="font-label-sm text-primary uppercase tracking-widest">
@@ -39,7 +42,7 @@ export default function Skills() {
         </p>
       </header>
       {/* <!-- Tech Stack Grid Section --> */}
-      <main className="max-w-7xl mx-auto px-6 md:px-12 pb-xxl">
+      <main className="w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
           {/* <!-- Frontend Card --> */}
           <div className="bg-surface-container-lowest border border-outline-variant p-lg rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:border-primary transition-all duration-300 group">
@@ -210,6 +213,6 @@ export default function Skills() {
           </div>
         </div>
       </main>
-    </>
+    </main>
   );
 }

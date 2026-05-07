@@ -5,12 +5,15 @@ import { FaRegCheckCircle } from "react-icons/fa";
 
 export default function Projects() {
   return (
-    <main className="max-w-7xl mx-auto px-8 py-xxl">
+    <main
+      id="projects"
+      className="max-w-7xl mx-auto px-6 md:px-12 py-10"
+    >
       {/* <!-- Section Header --> */}
       <div className="mb-xl text-center md:text-left">
-        <div className="inline-flex items-center gap-2 mb-sm">
-          <div className="h-0.5 w-8 bg-primary"></div>
-          <span className="text-primary font-label-sm text-label-sm uppercase tracking-widest">
+        <div className="flex items-center gap-sm mb-md">
+          <span className="w-3 h-3 bg-primary rounded-full animate-pulse"></span>
+          <span className="font-label-sm text-primary uppercase tracking-widest">
             Portfolio
           </span>
         </div>
