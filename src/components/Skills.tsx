@@ -13,9 +13,19 @@ import {
   RiJavaLine,
 } from "react-icons/ri";
 import { BiLogoSpringBoot, BiLogoMongodb } from "react-icons/bi";
-import { SiMysql, SiDocker } from "react-icons/si";
+import {
+  SiMysql,
+  SiDocker,
+  SiRedux,
+  SiMui,
+  SiExpress,
+  SiApachekafka,
+  SiKeycloak,
+} from "react-icons/si";
 import { ImGit } from "react-icons/im";
-import { FaAws, FaJenkins } from "react-icons/fa6";
+import { FaAws } from "react-icons/fa6";
+import { TbBrandTypescript } from "react-icons/tb";
+import { AiOutlinePython } from "react-icons/ai";
 
 const skills = [
   {
@@ -48,8 +58,23 @@ const skills = [
       },
       {
         id: 4,
+        icon: <TbBrandTypescript size={18} />,
+        name: "TypeScript",
+      },
+      {
+        id: 5,
         icon: <RiJavascriptLine size={18} />,
         name: "JavaScript",
+      },
+      {
+        id: 6,
+        icon: <SiRedux size={15} />,
+        name: "Redux Toolkit",
+      },
+      {
+        id: 7,
+        icon: <SiMui size={15} />,
+        name: "Material UI",
       },
     ],
   },
@@ -80,6 +105,16 @@ const skills = [
         id: 3,
         icon: <MdOutlineApi size={18} />,
         name: "REST APIs",
+      },
+      {
+        id: 4,
+        icon: <SiExpress size={18} />,
+        name: "Express.js",
+      },
+      {
+        id: 3,
+        icon: <AiOutlinePython size={18} />,
+        name: "Python",
       },
     ],
   },
@@ -115,7 +150,7 @@ const skills = [
         <MdOutlineSettingsSuggest size={30} />
       </div>
     ),
-    title: "Tools & DevOps",
+    title: "DevOps & Tools",
     category: "Infra",
     description:
       "Streamlining deployment workflows and managing cloud infrastructure to ensure continuous delivery and high availability.",
@@ -133,13 +168,18 @@ const skills = [
       },
       {
         id: 3,
-        icon: <FaAws size={18} />,
-        name: "AWS (Basics)",
+        icon: <SiApachekafka size={18} />,
+        name: "Apache Kafka",
       },
       {
         id: 4,
-        icon: <FaJenkins size={18} />,
-        name: "CI/CD",
+        icon: <SiKeycloak size={15} />,
+        name: "Keycloak",
+      },
+      {
+        id: 5,
+        icon: <FaAws size={18} />,
+        name: "AWS (Basics)",
       },
     ],
   },
