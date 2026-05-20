@@ -2,8 +2,8 @@ import HeroSection from "@/components/HeroSection";
 import AboutMe from "@/components/AboutMe";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
+// import Experience from "@/components/Experience";
+// import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -13,8 +13,8 @@ export default function Home() {
       <AboutMe />
       <Skills />
       <Projects />
-      <Experience />
-      <Education />
+      {/* <Experience /> */}
+      {/* <Education /> */}
       <Contact />
     </main>
   );

@@ -5,10 +5,16 @@ export default function GoToProjects() {
     <button
       onClick={() => {
         const element = document.getElementById("projects");
-        element?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+        if (element) {
+          const offset = 80;
+          const elementPosition =
+            element.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - offset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
       }}
       className="bg-[#005bc4] text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center space-x-2 hover:bg-blue-700 transition-all group cursor-pointer"
     >

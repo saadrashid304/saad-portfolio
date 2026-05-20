@@ -14,27 +14,35 @@ export default function Footer() {
         <div className="flex gap-8">
           <a
             className="text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 font-['Inter'] text-xs uppercase tracking-widest hover:-translate-y-0.5 transition-transform duration-300"
-            href="#"
+            href="https://github.com/saadrashid304"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>
           <a
             className="text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 font-['Inter'] text-xs uppercase tracking-widest hover:-translate-y-0.5 transition-transform duration-300"
-            href="#"
+            href="https://www.linkedin.com/in/saadrashid304"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>
           <a
             className="text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 font-['Inter'] text-xs uppercase tracking-widest hover:-translate-y-0.5 transition-transform duration-300"
-            href="#"
+            href="mailto:saadrashid304@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Source Code
+            Email
           </a>
           <a
             className="text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 font-['Inter'] text-xs uppercase tracking-widest hover:-translate-y-0.5 transition-transform duration-300"
-            href="#"
+            href="tel:+923135163383"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Email
+            Phone
           </a>
         </div>
       </div>

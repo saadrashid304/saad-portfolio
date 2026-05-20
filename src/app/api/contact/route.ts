@@ -5,12 +5,12 @@ const resend = new Resend(process.env.RESEND_CONTACT_FORM_API_KEY);
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { name, email, phoneNo, subject, message } = body;
+    const { name, email, subject, message } = body;
 
     const data = await resend.emails.send({
-      from: "Norasol <onboarding@resend.dev>",
+      from: "Portfolio Website <onboarding@resend.dev>",
       to: "saadrashid304@gmail.com",
-      subject: `New Inquiry from ${name} - ${subject || "Norasol Contact"}`,
+      subject: `New Inquiry from ${name} - ${subject || "Portfolio Website Contact"}`,
       html: `
       <div style="font-family: Arial, sans-serif; background-color: #f4f6f8; padding: 20px;">
 
@@ -18,7 +18,7 @@ export async function POST(req: Request) {
 
           <!-- Header -->
           <div style="background-color: #0f172a; color: #ffffff; padding: 16px 24px;">
-            <h2 style="margin: 0; font-size: 20px;">NoraSol</h2>
+            <h2 style="margin: 0; font-size: 20px;">Saad Rashid Portfolio</h2>
             <p style="margin: 4px 0 0; font-size: 13px; opacity: 0.8;">
               New Contact Form Submission
             </p>
@@ -42,11 +42,6 @@ export async function POST(req: Request) {
                 <td style="padding: 10px;">${email}</td>
               </tr>
 
-              <tr>
-                <td style="padding: 10px; font-weight: bold;">Phone:</td>
-                <td style="padding: 10px;">${phoneNo || "N/A"}</td>
-              </tr>
-
               <tr style="background-color: #f9fafb;">
                 <td style="padding: 10px; font-weight: bold;">Subject:</td>
                 <td style="padding: 10px;">${subject || "General Inquiry"}</td>
@@ -63,14 +58,14 @@ export async function POST(req: Request) {
             <hr style="margin: 24px 0; border: none; border-top: 1px solid #e5e7eb;" />
 
             <p style="font-size: 12px; color: #6b7280;">
-              This email was automatically generated from the Norasol contact form.
+              This email was automatically generated from the Portfolio contact form.
             </p>
           </div>
 
           <!-- Footer -->
           <div style="background-color: #f9fafb; padding: 16px 24px; text-align: center;">
             <p style="font-size: 12px; color: #9ca3af; margin: 0;">
-              © ${new Date().getFullYear()} Norasol. All rights reserved.
+              © ${new Date().getFullYear()} Saad Rashid. All rights reserved.
             </p>
           </div>
 

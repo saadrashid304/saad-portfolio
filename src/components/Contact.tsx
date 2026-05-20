@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import {
   MdOutlineMailOutline,
@@ -8,6 +11,30 @@ import {
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Contact() {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    const form = e.target as HTMLFormElement;
+    const data = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      subject: (form.elements.namedItem("subject") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement)
+        .value,
+    };
+
+    await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    setLoading(false);
+    form.reset();
+    alert("Message sent successfully!");
+  };
+
   return (
     <main id="contact" className="max-w-7xl mx-auto px-6 md:px-12 py-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-xl">
@@ -42,7 +69,9 @@ export default function Contact() {
                 </p>
                 <a
                   className="font-body-md text-on-surface hover:text-primary transition-colors cursor-pointer"
-                  href="mailto:hello@kineticlogic.io"
+                  href="mailto:saadrashid304@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   saadrashid304@gmail.com
                 </a>
@@ -59,7 +88,9 @@ export default function Contact() {
                 </p>
                 <a
                   className="font-body-md text-on-surface hover:text-primary transition-colors cursor-pointer"
-                  href="#"
+                  href="tel:+923135163383"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   +92 313 5163383
                 </a>
@@ -76,7 +107,9 @@ export default function Contact() {
                 </p>
                 <a
                   className="font-body-md text-on-surface hover:text-primary transition-colors cursor-pointer"
-                  href="#"
+                  href="https://www.linkedin.com/in/saadrashid304"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   https://www.linkedin.com/in/saadrashid304
                 </a>
@@ -93,7 +126,9 @@ export default function Contact() {
                 </p>
                 <a
                   className="font-body-md text-on-surface hover:text-primary transition-colors cursor-pointer"
-                  href="#"
+                  href="https://github.com/saadrashid304"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   https://github.com/saadrashid304
                 </a>
@@ -115,7 +150,7 @@ export default function Contact() {
         {/* <!-- Right Column: Contact Form --> */}
         <div className="lg:col-span-7">
           <div className="bg-surface-container-lowest p-xl rounded-xl border border-[#E5E5E7] shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
-            <form className="flex flex-col gap-lg">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
                 <div className="flex flex-col gap-sm">
                   <label
@@ -130,6 +165,7 @@ export default function Contact() {
                     name="name"
                     placeholder="John Doe"
                     type="text"
+                    required
                   />
                 </div>
                 <div className="flex flex-col gap-sm">
@@ -145,6 +181,7 @@ export default function Contact() {
                     name="email"
                     placeholder="john@example.com"
                     type="email"
+                    required
                   />
                 </div>
               </div>
@@ -153,7 +190,7 @@ export default function Contact() {
                   className="font-label-sm text-on-surface-variant"
                   htmlFor="subject"
                 >
-                  Subject (Optional)
+                  Subject
                 </label>
                 <input
                   className="w-full px-md py-3 bg-white border border-[#E5E5E7] rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all placeholder:text-outline-variant font-body-md"
@@ -161,6 +198,7 @@ export default function Contact() {
                   name="subject"
                   placeholder="Project Inquiry"
                   type="text"
+                  required
                 />
               </div>
               <div className="flex flex-col gap-sm">
@@ -176,14 +214,16 @@ export default function Contact() {
                   name="message"
                   placeholder="Tell me about your project or just say hi..."
                   rows={6}
+                  required
                 ></textarea>
               </div>
               <div className="flex flex-col gap-md">
                 <button
-                  className="w-full py-4 bg-primary text-on-primary rounded-lg font-h3 hover:bg-primary-container shadow-lg active:scale-[0.98] transition-transform duration-150"
+                  disabled={loading}
+                  className="w-full py-4 cursor-pointer bg-primary text-on-primary rounded-lg font-h3 hover:bg-primary-container shadow-lg active:scale-[0.98] transition-transform duration-150"
                   type="submit"
                 >
-                  Send Message
+                  {loading ? "Sending..." : "Send Message"}
                 </button>
                 <p className="text-center font-label-sm text-outline-variant flex items-center justify-center gap-xs">
                   <MdOutlineLock />

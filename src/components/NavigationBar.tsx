@@ -89,7 +89,7 @@ export default function NavigationBar() {
           >
             Projects
           </li>
-          <li
+          {/* <li
             onClick={() => {
               setSelectedLink("Experience");
               const element = document.getElementById("experience");
@@ -107,8 +107,8 @@ export default function NavigationBar() {
             className={`${selectedLink === "Experience" ? "text-blue-600 border-b-2 border-blue-600 pb-1" : "text-slate-500 hover:text-blue-600"} transition-colors font-['Inter'] text-sm font-medium tracking-tight cursor-pointer`}
           >
             Experience
-          </li>
-          <li
+          </li> */}
+          {/* <li
             onClick={() => {
               setSelectedLink("Education");
               const element = document.getElementById("education");
@@ -126,7 +126,7 @@ export default function NavigationBar() {
             className={`${selectedLink === "Education" ? "text-blue-600 border-b-2 border-blue-600 pb-1" : "text-slate-500 hover:text-blue-600"} transition-colors font-['Inter'] text-sm font-medium tracking-tight cursor-pointer`}
           >
             Education
-          </li>
+          </li> */}
         </ul>
         <button
           onClick={() => {

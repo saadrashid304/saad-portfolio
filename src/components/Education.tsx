@@ -1,19 +1,17 @@
 import Image from "next/image";
 import {
-  MdOutlineSecurity,
-  MdOutlineAccountTree,
-  MdOutlineNewspaper,
   MdOutlineSchool,
   MdOutlineCheckCircle,
   MdOutlineLocationOn,
 } from "react-icons/md";
+import { FaUniversity } from "react-icons/fa";
+import { LuUniversity, LuSchool } from "react-icons/lu";
+
+import comsats from "@/assets/comsats.jpeg";
 
 export default function Education() {
   return (
-    <main
-      id="education"
-      className="max-w-7xl mx-auto px-6 md:px-12 py-10"
-    >
+    <main id="education" className="max-w-7xl mx-auto px-6 md:px-12 py-10">
       {/* <!-- Hero/Header Section --> */}
       <section className="mb-xl">
         <div className="flex flex-col gap-sm">
@@ -47,31 +45,29 @@ export default function Education() {
               <ul className="flex flex-col gap-sm">
                 <li className="flex items-center gap-2 text-sm text-secondary">
                   <MdOutlineCheckCircle />
-                  Verified Degree &amp; Transcripts
+                  Original Degree &amp; Transcripts
                 </li>
                 <li className="flex items-center gap-2 text-sm text-secondary">
                   <MdOutlineCheckCircle />
-                  Engineering Certification
+                  Udemy Certification
                 </li>
-                <li className="flex items-center gap-2 text-sm text-secondary">
+                {/* <li className="flex items-center gap-2 text-sm text-secondary">
                   <MdOutlineCheckCircle />
                   Mathematical Background
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="relative rounded-xl overflow-hidden h-48 border border-[#E5E5E7] soft-shadow">
               <Image
                 priority
-                width={512}
-                height={512}
-                alt=""
+                alt="COMSATS University"
                 className="w-full h-full object-cover"
                 data-alt="A clean, high-key photograph of a modern university library with bright natural light streaming through large windows. The scene captures the essence of a premium academic environment with minimalist furniture and a scholarly atmosphere. The color palette is dominated by soft whites and light woods, reflecting the high-performance technical maturity of the engineering portfolio style."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHs8rRpnNnpUWOrNTrB0Zc9LfdKjfYlJEhAjLBOgLrIggiVROJo58N98vFDtn104i4ca2GDFBP3QMT9H5zEdUA0jO7nKkku_Tl8rswCH2JV3sl0LGZLlMWivNi9Rvi6rdkqG-xZeXcF1pbkVxUuF07e2acTQfpnKzE2M7_YhkKV33SyxuYC_xEHbDuM0qfRSzk5zKRT38IYYH8oO7q0RICFy_fGE3uOvSuFfVRDmcf1eiVGZNPpJbosyHSGQK5j4wdlwFDgn5k7ho"
+                src={comsats}
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent flex items-end p-md">
                 <span className="text-white font-label-sm text-xs">
-                  COMSATS Campus, Islamabad
+                  COMSATS University, Islamabad
                 </span>
               </div>
             </div>
@@ -84,7 +80,7 @@ export default function Education() {
               {/* <!-- Education Item 1 --> */}
               <div className="relative md:pl-12 flex flex-col gap-2 group">
                 <div className="absolute -left-0.5 top-0 w-6 h-6 md:w-10 md:h-10 bg-white border-2 border-primary rounded-full flex items-center justify-center z-10">
-                  <MdOutlineSecurity size={20} className="text-primary" />
+                  <FaUniversity size={20} className="text-primary" />
                 </div>
                 {/* <div className="absolute left-2.5 top-2 w-3 h-3 rounded-full border-2 border-primary bg-white z-10 hidden md:block group-hover:bg-primary transition-colors"></div> */}
                 <div className="bg-white p-lg rounded-xl border border-[#E5E5E7] soft-shadow group-hover:border-primary/40 transition-all duration-300">
@@ -102,19 +98,22 @@ export default function Education() {
                   </div>
                   <div className="flex items-center gap-2 text-secondary font-medium mb-4">
                     <MdOutlineSchool />
-                    <span>HEC</span>
+                    <span>HEC Recognized</span>
                   </div>
                   <p className="text-secondary font-body-md leading-relaxed">
-                    Specialized in Software Architecture, Web Technologies, and
-                    Distributed Systems. Completed a capstone project focused on
-                    real-time data processing and microservices architecture.
+                    Focused on Software Engineering principles, Web Development,
+                    Database Management, and System Design. Worked on academic
+                    and practical projects involving full-stack web
+                    applications, distributed systems, and modern software
+                    architectures using technologies such as React.js, Spring
+                    Boot, and MongoDB.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-2">
                     <span className="bg-[#F0F0F2] text-slate-600 font-label-sm text-xs px-3 py-1 rounded-md">
-                      Algorithms
+                      Software Engineering
                     </span>
                     <span className="bg-[#F0F0F2] text-slate-600 font-label-sm text-xs px-3 py-1 rounded-md">
-                      OS Design
+                      Web Development
                     </span>
                     <span className="bg-[#F0F0F2] text-slate-600 font-label-sm text-xs px-3 py-1 rounded-md">
                       Database Systems
@@ -124,8 +123,8 @@ export default function Education() {
               </div>
               {/* <!-- Education Item 2 --> */}
               <div className="relative md:pl-12 flex flex-col gap-2 group">
-                <div className="absolute -left-0.5 top-1 w-6 h-6 md:w-10 md:h-10 bg-white border-2 border-slate-300 rounded-full flex items-center justify-center z-10">
-                  <MdOutlineAccountTree size={20} className="text-slate-400" />
+                <div className="absolute -left-0.5 top-1 w-6 h-6 md:w-10 md:h-10 bg-white border-2 border-primary rounded-full flex items-center justify-center z-10">
+                  <LuUniversity size={20} className="text-primary" />
                 </div>
                 {/* <div className="absolute left-2.5 top-2 w-3 h-3 rounded-full border-2 border-slate-300 bg-white z-10 hidden md:block group-hover:border-primary transition-colors"></div> */}
                 <div className="bg-white p-lg rounded-xl border border-[#E5E5E7] soft-shadow group-hover:border-primary/20 transition-all duration-300">
@@ -146,16 +145,18 @@ export default function Education() {
                     <span>BISE Rawalpindi</span>
                   </div>
                   <p className="text-secondary font-body-md leading-relaxed">
-                    Focused on Mathematics, Physics, and Chemistry. Developed
-                    strong analytical and problem-solving skills as a foundation
-                    for engineering studies.
+                    Focused on Mathematics, Physics, and Chemistry with a strong
+                    emphasis on analytical thinking and problem-solving. Built a
+                    solid foundation in engineering concepts and quantitative
+                    reasoning, which later supported advanced studies in
+                    Software Engineering and technology-related fields.
                   </p>
                 </div>
               </div>
               {/* <!-- Education Item 3 --> */}
               <div className="relative md:pl-12 flex flex-col gap-2 group">
-                <div className="absolute -left-0.5 top-1 w-6 h-6 md:w-10 md:h-10 bg-white border-2 border-slate-300 rounded-full flex items-center justify-center z-10">
-                  <MdOutlineNewspaper size={20} className="text-slate-400" />
+                <div className="absolute -left-0.5 top-1 w-6 h-6 md:w-10 md:h-10 bg-white border-2 border-primary rounded-full flex items-center justify-center z-10">
+                  <LuSchool size={20} className="text-primary" />
                 </div>
                 {/* <div className="absolute left-2.5 top-2 w-3 h-3 rounded-full border-2 border-slate-300 bg-white z-10 hidden md:block group-hover:border-primary transition-colors"></div> */}
                 <div className="bg-white p-lg rounded-xl border border-[#E5E5E7] soft-shadow group-hover:border-primary/20 transition-all duration-300">
@@ -169,16 +170,17 @@ export default function Education() {
                   </div>
                   <div className="flex items-center gap-2 text-primary font-medium mb-4">
                     <MdOutlineLocationOn />
-                    <span>Nur Khan Air Base, Rawalpindi</span>
+                    <span>F.G. Fazaia Secondary School, Rawalpindi</span>
                   </div>
                   <div className="flex items-center gap-2 text-secondary font-medium mb-4">
                     <MdOutlineSchool />
                     <span>FBISE</span>
                   </div>
                   <p className="text-secondary font-body-md leading-relaxed">
-                    Core science subjects with a focus on logic and scientific
-                    methodology. Consistently ranked in the top percentile of
-                    the cohort.
+                    Studied core science subjects with a focus on Mathematics,
+                    Physics, and Computer Science. Developed strong logical
+                    reasoning, analytical thinking, and problem-solving skills
+                    through academic coursework and science-based learning.
                   </p>
                 </div>
               </div>
