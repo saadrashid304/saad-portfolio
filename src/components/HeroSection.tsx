@@ -5,7 +5,7 @@ export default function HeroSection() {
     // <!-- BEGIN: Hero Section -->
     <section
       id="home"
-      className="w-full max-w-7xl mx-auto px-6 md:px-12 py-12 lg:py-20 grid lg:grid-cols-2 gap-12 items-center"
+      className="w-full max-w-[90%] mx-auto px-6 md:px-12 py-12 lg:py-20 grid lg:grid-cols-2 gap-12 items-center"
     >
       {/* <!-- Left Content Column --> */}
       <div data-purpose="hero-text-content">

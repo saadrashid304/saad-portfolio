@@ -14,7 +14,7 @@ export default function AboutMe() {
     // <!-- About Me Section -->
     <section
       id="about"
-      className="max-w-7xl mx-auto px-6 md:px-12 py-12 lg:py-20 flex flex-col md:flex-row items-center gap-xl md:gap-xxl"
+      className="max-w-[90%] mx-auto px-6 md:px-12 py-12 lg:py-20 flex flex-col md:flex-row items-center gap-xl md:gap-xxl"
     >
       {/* <!-- Left Side: Profile Image --> */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-start">

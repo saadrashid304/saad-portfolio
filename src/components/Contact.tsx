@@ -36,7 +36,7 @@ export default function Contact() {
   };
 
   return (
-    <main id="contact" className="max-w-7xl mx-auto px-6 md:px-12 py-10">
+    <main id="contact" className="max-w-[90%] mx-auto px-6 md:px-12 py-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-xl">
         {/* <!-- Left Column: Information --> */}
         <div className="lg:col-span-5 flex flex-col gap-lg">

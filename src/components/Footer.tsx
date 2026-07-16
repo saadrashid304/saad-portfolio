@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     // <!-- Footer -->
     <footer className="bg-white border-t border-slate-200 full-width py-12">
-      <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-8 gap-8">
+      <div className="flex flex-col md:flex-row items-center justify-between max-w-[90%] mx-auto px-8 gap-8">
         <div className="flex flex-col gap-2">
           <div className="text-lg font-black text-slate-900 tracking-tighter">
             SaadRashid

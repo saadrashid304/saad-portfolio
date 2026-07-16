@@ -8,7 +8,7 @@ export default function NavigationBar() {
   return (
     // <!-- TopNavBar -->
     <header className="bg-white/80 backdrop-blur-md border-b border-slate-200/60 shadow-[0px_4px_20px_rgba(0,0,0,0.04)] docked full-width top-0 sticky z-50">
-      <nav className="flex items-center justify-between max-w-7xl mx-auto px-6 md:px-12 h-20">
+      <nav className="flex items-center justify-between max-w-[90%] mx-auto px-6 md:px-12 h-20">
         <div className="text-xl font-bold tracking-tighter text-slate-900">
           SaadRashid
         </div>

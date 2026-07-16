@@ -112,7 +112,7 @@ const skills = [
         name: "Express.js",
       },
       {
-        id: 3,
+        id: 5,
         icon: <AiOutlinePython size={18} />,
         name: "Python",
       },
@@ -187,7 +187,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <main id="skills" className="max-w-7xl mx-auto px-6 md:px-12 py-10">
+    <main id="skills" className="max-w-[90%] mx-auto px-6 md:px-12 py-10">
       {/* <!-- Hero Header for Tech Stack --> */}
       <header className="w-full mb-10">
         <div className="flex items-center gap-sm mb-md">
