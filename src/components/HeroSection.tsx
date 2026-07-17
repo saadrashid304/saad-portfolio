@@ -5,10 +5,10 @@ export default function HeroSection() {
     // <!-- BEGIN: Hero Section -->
     <section
       id="home"
-      className="w-full max-w-[90%] mx-auto px-6 md:px-12 py-12 lg:py-20 grid lg:grid-cols-2 gap-12 items-center"
+      className="motion-section w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-10 sm:py-12 lg:py-20 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center"
     >
       {/* <!-- Left Content Column --> */}
-      <div data-purpose="hero-text-content">
+      <div data-purpose="hero-text-content" className="animate-fade-up">
         {/* <!-- Status Badge --> */}
         <div className="inline-flex items-center space-x-2 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full mb-6">
           <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
@@ -16,7 +16,7 @@ export default function HeroSection() {
             Available for Work
           </span>
         </div>
-        <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 leading-tight mb-4">
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-slate-900 leading-tight mb-4">
           {`Hi, I'm `}
           <span className="text-[#005bc4]">Saad Rashid</span>
         </h1>
@@ -77,10 +77,10 @@ export default function HeroSection() {
           </div> */}
       </div>
       {/* <!-- Right Code Column --> */}
-      <div className="relative" data-purpose="hero-code-visual">
+      <div className="relative animate-float-gently" data-purpose="hero-code-visual">
         <div className="terminal-window bg-[#1a1b26] rounded-xl overflow-hidden border border-slate-800">
           {/* <!-- Terminal Header --> */}
-          <div className="bg-[#24283b] px-4 py-3 flex items-center justify-between border-b border-slate-800">
+        <div className="motion-shimmer bg-[#24283b] px-4 py-3 flex items-center justify-between border-b border-slate-800">
             <div className="flex space-x-2">
               <div className="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
               <div className="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>

@@ -224,7 +224,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <main id="projects" className="max-w-[90%] mx-auto px-6 md:px-12 py-10">
+    <main id="projects" className="motion-section max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-10">
       {/* <!-- Section Header --> */}
       <div className="mb-xl text-center md:text-left">
         <div className="flex items-center gap-sm mb-md">
@@ -246,10 +246,10 @@ export default function Projects() {
         {projects.map((project) => (
           <article
             key={project.id}
-            className="project-card flex flex-col bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden transition-all duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]"
+            className="motion-card project-card reveal-on-hover flex flex-col bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden transition-all duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]"
           >
             <div className="aspect-video overflow-hidden">
-              {project.thumbnail}
+              <div className="motion-image h-full">{project.thumbnail}</div>
             </div>
             <div className="p-lg flex flex-col grow">
               <div className="flex flex-wrap gap-2 mb-md">

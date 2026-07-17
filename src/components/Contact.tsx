@@ -36,7 +36,7 @@ export default function Contact() {
   };
 
   return (
-    <main id="contact" className="max-w-[90%] mx-auto px-6 md:px-12 py-10">
+    <main id="contact" className="motion-section max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-xl">
         {/* <!-- Left Column: Information --> */}
         <div className="lg:col-span-5 flex flex-col gap-lg">
@@ -149,7 +149,7 @@ export default function Contact() {
         </div>
         {/* <!-- Right Column: Contact Form --> */}
         <div className="lg:col-span-7">
-          <div className="bg-surface-container-lowest p-xl rounded-xl border border-[#E5E5E7] shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+          <div className="motion-card bg-surface-container-lowest p-6 sm:p-xl rounded-xl border border-[#E5E5E7] shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
             <form onSubmit={handleSubmit} className="flex flex-col gap-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
                 <div className="flex flex-col gap-sm">

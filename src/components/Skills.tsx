@@ -187,7 +187,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <main id="skills" className="max-w-[90%] mx-auto px-6 md:px-12 py-10">
+    <main id="skills" className="motion-section max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-10">
       {/* <!-- Hero Header for Tech Stack --> */}
       <header className="w-full mb-10">
         <div className="flex items-center gap-sm mb-md">
@@ -213,7 +213,7 @@ export default function Skills() {
           {skills.map((skill) => (
             <div
               key={skill.id}
-              className="bg-surface-container-lowest border border-outline-variant p-lg rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:border-primary transition-all duration-300 group"
+              className="motion-card reveal-on-hover bg-surface-container-lowest border border-outline-variant p-lg rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:border-primary transition-all duration-300 group"
             >
               <div className="flex items-center justify-between mb-lg">
                 <div className="flex items-center gap-md">

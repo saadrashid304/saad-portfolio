@@ -14,18 +14,18 @@ export default function AboutMe() {
     // <!-- About Me Section -->
     <section
       id="about"
-      className="max-w-[90%] mx-auto px-6 md:px-12 py-12 lg:py-20 flex flex-col md:flex-row items-center gap-xl md:gap-xxl"
+      className="motion-section max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-12 lg:py-20 flex flex-col md:flex-row items-center gap-10 lg:gap-24"
     >
       {/* <!-- Left Side: Profile Image --> */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-        <div className="relative group w-full">
+        <div className="relative group w-full animate-fade-up">
           {/* <!-- Subtle border frame aesthetic from SCREEN_6 --> */}
           <div className="absolute -inset-4 border border-outline-variant rounded-xl opacity-50 group-hover:border-primary transition-colors duration-500"></div>
           <div className="relative w-full aspect-square overflow-hidden rounded-xl bg-surface-container-low shadow-soft border border-outline-variant">
             <Image
               priority
               alt="Alex Rivera Profile"
-              className="w-full h-full object-cover grayscale-20 group-hover:grayscale-0 transition-all duration-700"
+              className="motion-image w-full h-full object-cover grayscale-20 group-hover:grayscale-0 transition-all duration-700"
               data-alt="A professional, high-end portrait of a software engineer named Saad Rashid. He has a confident and approachable expression, set against a clean, minimalist studio background with soft, diffused lighting. The image captures him from the shoulders up, highlighting a modern tech-professional aesthetic. The color palette is dominated by neutral tones and soft whites to match the light-mode UI design, reflecting technical precision and maturity."
               src={ProfilePicture}
             />
@@ -71,7 +71,7 @@ export default function AboutMe() {
         </div>
         {/* <!-- Highlights Grid --> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-md pt-md">
-          <div className="flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+          <div className="motion-card flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
             <MdOutlineLayers className="text-primary" size={35} />
             <div className="flex flex-col gap-1">
               <span className="font-h3 text-[14px] font-bold text-on-surface">
@@ -82,7 +82,7 @@ export default function AboutMe() {
               </span>
             </div>
           </div>
-          <div className="flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+          <div className="motion-card flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
             <MdOutlineApi className="text-primary" size={38} />
             <div className="flex flex-col gap-1">
               <span className="font-h3 text-[14px] font-bold text-on-surface">
@@ -93,7 +93,7 @@ export default function AboutMe() {
               </span>
             </div>
           </div>
-          <div className="flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+          <div className="motion-card flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
             <FaCode className="text-primary" size={32} />
             <div className="flex flex-col gap-1">
               <span className="font-h3 text-[14px] font-bold text-on-surface">
@@ -104,7 +104,7 @@ export default function AboutMe() {
               </span>
             </div>
           </div>
-          <div className="flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+          <div className="motion-card flex items-center gap-2 p-2 bg-white border border-outline-variant rounded-lg hover:border-primary transition-colors duration-300 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
             <MdOutlinePsychology className="text-primary" size={40} />
             <div className="flex flex-col gap-1">
               <span className="font-h3 text-[14px] font-bold text-on-surface">

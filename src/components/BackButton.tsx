@@ -13,7 +13,7 @@ export default function BackButton() {
   return (
     <button
       onClick={handleBackClick}
-      className="font-h1 text-body-md font-bold text-on-surface mb-md flex items-center gap-1.5 cursor-pointer hover:scale-105 transition-transform duration-300"
+      className="font-h1 text-body-md font-bold text-primary mb-md flex items-center gap-1.5 cursor-pointer hover:scale-105 transition-transform duration-300"
     >
       <FaArrowLeftLong />
       <span>Back to Projects</span>
