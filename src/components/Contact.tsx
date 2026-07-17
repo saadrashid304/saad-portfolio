@@ -36,7 +36,10 @@ export default function Contact() {
   };
 
   return (
-    <main id="contact" className="motion-section max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-10">
+    <main
+      id="contact"
+      className="motion-section max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-10"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-xl">
         {/* <!-- Left Column: Information --> */}
         <div className="lg:col-span-5 flex flex-col gap-lg">
@@ -111,7 +114,7 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://www.linkedin.com/in/saadrashid304
+                  www.linkedin.com/in/saadrashid304
                 </a>
               </div>
             </div>
@@ -130,7 +133,7 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://github.com/saadrashid304
+                  www.github.com/saadrashid304
                 </a>
               </div>
             </div>
