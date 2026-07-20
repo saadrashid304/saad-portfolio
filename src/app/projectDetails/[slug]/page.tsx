@@ -135,7 +135,14 @@ export default async function ProjectDetails({
               <figure key={media.name} className="overflow-hidden rounded-xl border border-outline-variant bg-surface-container-lowest soft-shadow">
                 <figcaption className="border-b border-outline-variant/60 px-4 py-3 font-label-sm text-label-sm font-semibold text-on-surface">{media.name}</figcaption>
                 {media.type === "video" ? (
-                  <video src={media.src as string} controls className="aspect-video h-full w-full object-contain" aria-label={media.alt} />
+                  <video
+                    src={media.src as string}
+                    controls
+                    preload="metadata"
+                    playsInline
+                    className="block h-auto max-h-[70vh] w-full bg-black object-contain"
+                    aria-label={media.alt}
+                  />
                 ) : (
                   <Image src={media.src} alt={media.alt} className="h-auto max-h-[32rem] w-full object-contain" sizes="(max-width: 768px) 100vw, 50vw" />
                 )}

@@ -207,7 +207,7 @@ export default function Skills() {
         </p>
       </header>
       {/* <!-- Tech Stack Grid Section --> */}
-      <main className="w-full">
+      <div className="w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
           {/* CARD */}
           {skills.map((skill) => (
@@ -245,7 +245,7 @@ export default function Skills() {
             </div>
           ))}
         </div>
-      </main>
+      </div>
     </main>
   );
 }
