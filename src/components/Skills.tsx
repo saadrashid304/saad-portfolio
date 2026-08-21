@@ -18,14 +18,11 @@ import {
   SiDocker,
   SiRedux,
   SiMui,
-  SiExpress,
   SiApachekafka,
   SiKeycloak,
 } from "react-icons/si";
 import { ImGit } from "react-icons/im";
-import { FaAws } from "react-icons/fa6";
 import { TbBrandTypescript } from "react-icons/tb";
-import { AiOutlinePython } from "react-icons/ai";
 
 const skills = [
   {
@@ -106,16 +103,6 @@ const skills = [
         icon: <MdOutlineApi size={18} />,
         name: "REST APIs",
       },
-      {
-        id: 4,
-        icon: <SiExpress size={18} />,
-        name: "Express.js",
-      },
-      {
-        id: 5,
-        icon: <AiOutlinePython size={18} />,
-        name: "Python",
-      },
     ],
   },
   {
@@ -153,7 +140,7 @@ const skills = [
     title: "DevOps & Tools",
     category: "Infra",
     description:
-      "Streamlining deployment workflows and managing cloud infrastructure to ensure continuous delivery and high availability.",
+      "Streamlining deployment workflows and managing production infrastructure to ensure continuous delivery and high availability.",
     hoverColor: "bg-primary-fixed",
     technologies: [
       {
@@ -176,18 +163,16 @@ const skills = [
         icon: <SiKeycloak size={15} />,
         name: "Keycloak",
       },
-      {
-        id: 5,
-        icon: <FaAws size={18} />,
-        name: "AWS (Basics)",
-      },
     ],
   },
 ];
 
 export default function Skills() {
   return (
-    <main id="skills" className="motion-section max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-10">
+    <main
+      id="skills"
+      className="motion-section max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-10"
+    >
       {/* <!-- Hero Header for Tech Stack --> */}
       <header className="w-full mb-10">
         <div className="flex items-center gap-sm mb-md">

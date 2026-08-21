@@ -21,12 +21,14 @@ export default function HeroSection() {
           <span className="text-[#005bc4]">Saad Rashid</span>
         </h1>
         <h2 className="text-2xl lg:text-3xl font-medium text-slate-700 mb-6">
-          Software Engineer | React.js &amp; Spring Boot Developer
+          Full Stack Developer | React.js &amp; Spring Boot
         </h2>
         <p className="text-lg text-slate-500 max-w-120 leading-relaxed mb-10">
-          Building scalable web applications with modern technologies. I
-          specialize in crafting high-performance frontend experiences and
-          robust backend architectures.
+          I build and support production systems end-to-end, from React and
+          TypeScript frontends to Spring Boot microservices. For the past four
+          years, I&apos;ve worked on PTCL IMS, a Lawful Interception platform
+          for law enforcement agencies, from early development through
+          deployment and ongoing support.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <GoToProjects />
@@ -77,10 +79,13 @@ export default function HeroSection() {
           </div> */}
       </div>
       {/* <!-- Right Code Column --> */}
-      <div className="relative animate-float-gently" data-purpose="hero-code-visual">
+      <div
+        className="relative animate-float-gently"
+        data-purpose="hero-code-visual"
+      >
         <div className="terminal-window bg-[#1a1b26] rounded-xl overflow-hidden border border-slate-800">
           {/* <!-- Terminal Header --> */}
-        <div className="motion-shimmer bg-[#24283b] px-4 py-3 flex items-center justify-between border-b border-slate-800">
+          <div className="motion-shimmer bg-[#24283b] px-4 py-3 flex items-center justify-between border-b border-slate-800">
             <div className="flex space-x-2">
               <div className="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
               <div className="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>

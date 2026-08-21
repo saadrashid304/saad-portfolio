@@ -24,7 +24,7 @@ export default function AboutMe() {
           <div className="relative w-full aspect-square overflow-hidden rounded-xl bg-surface-container-low shadow-soft border border-outline-variant">
             <Image
               priority
-              alt="Alex Rivera Profile"
+              alt="Saad Rashid Profile"
               className="motion-image w-full h-full object-cover grayscale-20 group-hover:grayscale-0 transition-all duration-700"
               data-alt="A professional, high-end portrait of a software engineer named Saad Rashid. He has a confident and approachable expression, set against a clean, minimalist studio background with soft, diffused lighting. The image captures him from the shoulders up, highlighting a modern tech-professional aesthetic. The color palette is dominated by neutral tones and soft whites to match the light-mode UI design, reflecting technical precision and maturity."
               src={ProfilePicture}
@@ -46,7 +46,7 @@ export default function AboutMe() {
       <div className="w-full md:w-1/2 flex flex-col gap-lg">
         <div className="flex flex-col gap-sm">
           <span className="text-primary font-bold text-label-sm uppercase tracking-[0.2em]">
-            Engineering Excellence
+            Full Stack Developer
           </span>
           <h1 className="font-h1 text-h1 font-bold text-on-surface">
             About Me
@@ -55,18 +55,20 @@ export default function AboutMe() {
         <div className="space-y-md">
           <p className="font-body-lg text-on-surface-variant leading-relaxed">
             I am <span className="font-bold text-on-surface">Saad Rashid</span>,
-            a dedicated Software Engineer specializing in{" "}
+            a Full Stack Developer specializing in{" "}
             <span className="text-primary">React.js</span> and{" "}
-            <span className="text-primary">Spring Boot</span>. With a deep
-            commitment to technical excellence, I architect full-stack
-            applications that prioritize clean code, exceptional performance,
-            and robust scalability.
+            <span className="text-primary">Spring Boot</span>. For the past four
+            years, I&apos;ve built and supported production systems end to end,
+            most recently PTCL IMS, a Lawful Interception platform for law
+            enforcement agencies that was redesigned from the ground up while I
+            was on the team.
           </p>
           <p className="font-body-md text-on-surface-variant">
-            My approach blends creative problem-solving with rigorous
-            engineering standards. I am passionate about translating complex
-            real-world challenges into seamless digital experiences that provide
-            tangible value to users and stakeholders alike.
+            I try to write code that holds up months after it ships, and I&apos;d
+            rather see a project through to production than stop once the demo
+            works. Beyond PTCL IMS, I&apos;ve also worked on other projects at CARE,
+            including client-facing websites and tools involving data
+            visualization and AI integration.
           </p>
         </div>
         {/* <!-- Highlights Grid --> */}
@@ -89,7 +91,7 @@ export default function AboutMe() {
                 API Design & Security
               </span>
               <span className="font-h3 text-[12px] text-on-surface-variant">
-                Architecting clean, secure, and performant RESTful services.
+                Designing clean, secure, and performant RESTful services.
               </span>
             </div>
           </div>
